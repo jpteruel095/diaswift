@@ -18,6 +18,9 @@
 		C6A8C62D2611E8A700995C02 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C62C2611E8A700995C02 /* APIProvider.swift */; };
 		C6A8C6302611E93500995C02 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C6A8C62F2611E93500995C02 /* SwiftyJSON */; };
 		C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6342611F0A400995C02 /* EndpointProtocol.swift */; };
+		C6A8C6372611FD9400995C02 /* EndpointProtocol+Getters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6362611FD9400995C02 /* EndpointProtocol+Getters.swift */; };
+		C6A8C63B2611FDE700995C02 /* EndpointProtocol+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C63A2611FDE700995C02 /* EndpointProtocol+Defaults.swift */; };
+		C6A8C63D2611FE0200995C02 /* DictionaryExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C63C2611FE0200995C02 /* DictionaryExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		C6A8C6272611E84700995C02 /* RouteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProtocol.swift; sourceTree = "<group>"; };
 		C6A8C62C2611E8A700995C02 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		C6A8C6342611F0A400995C02 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		C6A8C6362611FD9400995C02 /* EndpointProtocol+Getters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+Getters.swift"; sourceTree = "<group>"; };
+		C6A8C63A2611FDE700995C02 /* EndpointProtocol+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+Defaults.swift"; sourceTree = "<group>"; };
+		C6A8C63C2611FE0200995C02 /* DictionaryExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		C6A8C6232611E78B00995C02 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C6A8C6392611FDCD00995C02 /* Extensions */,
+				C6A8C6382611FDC800995C02 /* Helpers */,
 				C6A8C6242611E7B600995C02 /* API Communicator */,
 			);
 			name = Sources;
@@ -92,9 +100,26 @@
 			children = (
 				C6A8C6272611E84700995C02 /* RouteProtocol.swift */,
 				C6A8C6342611F0A400995C02 /* EndpointProtocol.swift */,
+				C6A8C63A2611FDE700995C02 /* EndpointProtocol+Defaults.swift */,
+				C6A8C6362611FD9400995C02 /* EndpointProtocol+Getters.swift */,
 				C6A8C62C2611E8A700995C02 /* APIProvider.swift */,
 			);
 			path = "API Communicator";
+			sourceTree = "<group>";
+		};
+		C6A8C6382611FDC800995C02 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C6A8C6392611FDCD00995C02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C6A8C63C2611FE0200995C02 /* DictionaryExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A8C63B2611FDE700995C02 /* EndpointProtocol+Defaults.swift in Sources */,
+				C6A8C63D2611FE0200995C02 /* DictionaryExt.swift in Sources */,
 				C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */,
 				C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */,
 				C6A8C62D2611E8A700995C02 /* APIProvider.swift in Sources */,
 				C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */,
+				C6A8C6372611FD9400995C02 /* EndpointProtocol+Getters.swift in Sources */,
 				C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */,
 				C6A8C6282611E84700995C02 /* RouteProtocol.swift in Sources */,
 			);
