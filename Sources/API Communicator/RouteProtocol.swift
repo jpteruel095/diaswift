@@ -5,6 +5,7 @@
 //  Created by John Patrick Teruel on 3/29/21.
 //
 
+import Foundation
 import Alamofire
 
 public typealias WebMethod = HTTPMethod
@@ -13,7 +14,13 @@ public typealias AdditionalHeadersHandler = (() -> [HTTPHeader])
 public protocol RouteProtocol{
     // MARK: Route properties
     
-    /// Path to endpoint (e.g., `api/v1/person`)
+    /// API Provider
+    var provider: APIProvider { get }
+    
+    /**
+     Path to endpoint (e.g., `api/v1/person`)
+     Note: Paths must always start without the forward slash
+     */
     var path: String { get }
     
     /// HTTP Method Used for the route
@@ -28,6 +35,21 @@ public protocol RouteProtocol{
     /// Can customize the headers returned for specific routes. Some routes require more headers besides the regular `Authorization: Bearer <token>` Header
     var additionalHeadersHandler: AdditionalHeadersHandler? { get }
     
-    /// Web configuration
-    var configuration: WebConfiguration { get }
+}
+
+extension RouteProtocol{
+    
+    // MARK: Equating
+    func isEqual(to route: RouteProtocol) -> Bool{
+        route.provider == provider
+            && route.path == path
+            && route.method == method
+            && route.url == url
+    }
+    
+    /// Returns concantenated host and path
+    var url: URL{
+        let base = self.provider.configuration.basePath
+        return URL(string: "\(base)\(path)")!
+    }
 }
