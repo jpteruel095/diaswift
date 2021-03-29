@@ -23,6 +23,9 @@ public extension EndpointProtocol{
     /// Returns null for additional headers handler
     var additionalHeadersHandler: AdditionalHeadersHandler? { nil }
     
+    /// Nil parameters
+    var parameters: ParameterType? { nil }
+    
     /// Blank nested keys
     var nestedKeys: [String] { [] }
     
@@ -55,6 +58,11 @@ public extension EndpointProtocol{
             Method: \(request.method.rawValue)
             """
             
+            guard !disablesDetailedRequestLogging else{
+                self.debugPrint(debugText)
+                return
+            }
+            
             if let headers = request.headers,
                headers.count > 0{
                 debugText.append("\nHeaders: \(headers.dictionary.toJSONString())")
@@ -62,12 +70,14 @@ public extension EndpointProtocol{
                 debugText.append("\nHeaders: empty")
             }
             
-//                if let parameters = parameters?.getParameters(),
-//                   parameters.keys.count > 0{
-//                    req.append("\nParameters: \(parameters.toJSONString())")
-//                }else{
-//                    req.append("\nParameters: empty")
-//                }
+            if let parameters = parameters?.getParameters(),
+               parameters.keys.count > 0{
+                debugText.append("\nParameters: \(parameters.toJSONString())")
+            }else{
+                debugText.append("\nParameters: empty")
+            }
+            
+            self.debugPrint(debugText)
         }
     }
     
@@ -77,7 +87,7 @@ public extension EndpointProtocol{
             Response for URL: \(url.absoluteString)
             Method: \(method.rawValue)
             """
-            guard !disablesDetailedRequestLogging else{
+            guard !disablesDetailedResponseLogging else{
                 self.debugPrint(debugText)
                 return
             }
@@ -93,6 +103,8 @@ public extension EndpointProtocol{
                 debugText.append("\nJSON: empty")
                 debugText.append("\nError: \(error.localizedDescription)")
             }
+            
+            self.debugPrint(debugText)
         }
     }
 }

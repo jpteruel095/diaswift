@@ -25,6 +25,9 @@
 		C6A8C6412611FFD400995C02 /* ParameterProtocol+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6402611FFD400995C02 /* ParameterProtocol+Defaults.swift */; };
 		C6A8C6432611FFEA00995C02 /* ParameterProtocol+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6422611FFEA00995C02 /* ParameterProtocol+Getter.swift */; };
 		C6A8C645261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C644261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift */; };
+		C6A8C647261203E400995C02 /* EndpointProtocol+Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C646261203E400995C02 /* EndpointProtocol+Worker.swift */; };
+		C6A8C6492612042A00995C02 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6482612042A00995C02 /* Helpers.swift */; };
+		C6A8C64B261207BC00995C02 /* EndpointProtocol+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C64A261207BC00995C02 /* EndpointProtocol+Interface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		C6A8C6402611FFD400995C02 /* ParameterProtocol+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParameterProtocol+Defaults.swift"; sourceTree = "<group>"; };
 		C6A8C6422611FFEA00995C02 /* ParameterProtocol+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParameterProtocol+Getter.swift"; sourceTree = "<group>"; };
 		C6A8C644261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParameterProtocol+EndpointProtocol.swift"; sourceTree = "<group>"; };
+		C6A8C646261203E400995C02 /* EndpointProtocol+Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+Worker.swift"; sourceTree = "<group>"; };
+		C6A8C6482612042A00995C02 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C6A8C64A261207BC00995C02 /* EndpointProtocol+Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+Interface.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 				C6A8C6342611F0A400995C02 /* EndpointProtocol.swift */,
 				C6A8C63A2611FDE700995C02 /* EndpointProtocol+Defaults.swift */,
 				C6A8C6362611FD9400995C02 /* EndpointProtocol+Getters.swift */,
+				C6A8C64A261207BC00995C02 /* EndpointProtocol+Interface.swift */,
+				C6A8C646261203E400995C02 /* EndpointProtocol+Worker.swift */,
 				C6A8C63E2611FE4F00995C02 /* ParameterProtocol.swift */,
 				C6A8C6402611FFD400995C02 /* ParameterProtocol+Defaults.swift */,
 				C6A8C644261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift */,
@@ -122,6 +130,7 @@
 		C6A8C6382611FDC800995C02 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C6A8C6482612042A00995C02 /* Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -216,14 +225,17 @@
 				C6A8C63F2611FE4F00995C02 /* ParameterProtocol.swift in Sources */,
 				C6A8C63D2611FE0200995C02 /* DictionaryExt.swift in Sources */,
 				C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */,
+				C6A8C64B261207BC00995C02 /* EndpointProtocol+Interface.swift in Sources */,
 				C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */,
 				C6A8C6412611FFD400995C02 /* ParameterProtocol+Defaults.swift in Sources */,
 				C6A8C645261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift in Sources */,
+				C6A8C647261203E400995C02 /* EndpointProtocol+Worker.swift in Sources */,
 				C6A8C62D2611E8A700995C02 /* APIProvider.swift in Sources */,
 				C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */,
 				C6A8C6372611FD9400995C02 /* EndpointProtocol+Getters.swift in Sources */,
 				C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */,
 				C6A8C6432611FFEA00995C02 /* ParameterProtocol+Getter.swift in Sources */,
+				C6A8C6492612042A00995C02 /* Helpers.swift in Sources */,
 				C6A8C6282611E84700995C02 /* RouteProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
