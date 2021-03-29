@@ -15,6 +15,9 @@ public protocol EndpointProtocol: RouteProtocol{
     /// Response type - Default: Swift Dictionary. Can also be [Any]
     associatedtype ResponseType = [String: Any]
     
+    /// Parameter type - Default: DefaultParameter
+    associatedtype ParameterType: ParameterProtocol = DefaultParameter
+    
     // MARK: Type Aliases
     /// JSON Result with Error
     typealias JSONResult = Result<JSON, Error>
@@ -29,11 +32,11 @@ public protocol EndpointProtocol: RouteProtocol{
     typealias SortHandler = ((ResponseType, ResponseType) throws -> Bool)
     
     // MARK: Properties
+    /// Parameters to be used
+    var parameters: ParameterType? { get }
+    
     /// Nesting keys, depending on the structure of the data. Used to cast objects to corresponding models, if the base fields are not required
     var nestedKeys: [String] { get }
-    
-    /// Serialized response based on nested keys
-    func serializeResponse(with object: Any, completion:MultipleResultClosure?)
     
     /// Handler to sort data
     var sortHandler: SortHandler? { get }
