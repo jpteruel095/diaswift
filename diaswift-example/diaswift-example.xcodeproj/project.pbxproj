@@ -11,6 +11,9 @@
 		C65945A22612D70800C3887B /* UploadEndpointProtocol+Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A12612D70800C3887B /* UploadEndpointProtocol+Interface.swift */; };
 		C65945A42612D74500C3887B /* UploadEndpointProtocol+FileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A32612D74500C3887B /* UploadEndpointProtocol+FileRequest.swift */; };
 		C65945A62612D7C600C3887B /* UploadEndpointProtocol+Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A52612D7C600C3887B /* UploadEndpointProtocol+Worker.swift */; };
+		C65945A82612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */; };
+		C65945AB2612F11E00C3887B /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = C65945AA2612F11E00C3887B /* ObjectMapper */; };
+		C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */; };
 		C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C60F2611E76A00995C02 /* AppDelegate.swift */; };
 		C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6112611E76A00995C02 /* SceneDelegate.swift */; };
 		C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6132611E76A00995C02 /* ViewController.swift */; };
@@ -39,6 +42,8 @@
 		C65945A12612D70800C3887B /* UploadEndpointProtocol+Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadEndpointProtocol+Interface.swift"; sourceTree = "<group>"; };
 		C65945A32612D74500C3887B /* UploadEndpointProtocol+FileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadEndpointProtocol+FileRequest.swift"; sourceTree = "<group>"; };
 		C65945A52612D7C600C3887B /* UploadEndpointProtocol+Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadEndpointProtocol+Worker.swift"; sourceTree = "<group>"; };
+		C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+ObjectMapper.swift"; sourceTree = "<group>"; };
+		C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		C6A8C60C2611E76A00995C02 /* diaswift-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diaswift-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A8C60F2611E76A00995C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A8C6112611E76A00995C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65945AB2612F11E00C3887B /* ObjectMapper in Frameworks */,
 				C6A8C6302611E93500995C02 /* SwiftyJSON in Frameworks */,
 				C6A8C62B2611E88C00995C02 /* Alamofire in Frameworks */,
 			);
@@ -83,6 +89,8 @@
 				C6A8C63A2611FDE700995C02 /* EndpointProtocol+Defaults.swift */,
 				C6A8C6362611FD9400995C02 /* EndpointProtocol+Getters.swift */,
 				C6A8C646261203E400995C02 /* EndpointProtocol+Worker.swift */,
+				C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */,
+				C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */,
 			);
 			path = "Endpoint Protocol";
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 			packageProductDependencies = (
 				C6A8C62A2611E88C00995C02 /* Alamofire */,
 				C6A8C62F2611E93500995C02 /* SwiftyJSON */,
+				C65945AA2612F11E00C3887B /* ObjectMapper */,
 			);
 			productName = "diaswift-example";
 			productReference = C6A8C60C2611E76A00995C02 /* diaswift-example.app */;
@@ -229,6 +238,7 @@
 			packageReferences = (
 				C6A8C6292611E88C00995C02 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C6A8C62E2611E93500995C02 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C65945A92612F11E00C3887B /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = C6A8C60D2611E76A00995C02 /* Products */;
 			projectDirPath = "";
@@ -263,10 +273,12 @@
 				C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */,
 				C6A8C64B261207BC00995C02 /* EndpointProtocol+Interface.swift in Sources */,
 				C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */,
+				C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */,
 				C6A8C6412611FFD400995C02 /* ParameterProtocol+Defaults.swift in Sources */,
 				C6A8C645261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift in Sources */,
 				C6A8C647261203E400995C02 /* EndpointProtocol+Worker.swift in Sources */,
 				C65945A42612D74500C3887B /* UploadEndpointProtocol+FileRequest.swift in Sources */,
+				C65945A82612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift in Sources */,
 				C65945A02612D65B00C3887B /* UploadEndpointProtocol.swift in Sources */,
 				C65945A62612D7C600C3887B /* UploadEndpointProtocol+Worker.swift in Sources */,
 				C6A8C62D2611E8A700995C02 /* APIProvider.swift in Sources */,
@@ -480,6 +492,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C65945A92612F11E00C3887B /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		C6A8C6292611E88C00995C02 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -499,6 +519,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C65945AA2612F11E00C3887B /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65945A92612F11E00C3887B /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
 		C6A8C62A2611E88C00995C02 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6A8C6292611E88C00995C02 /* XCRemoteSwiftPackageReference "Alamofire" */;
