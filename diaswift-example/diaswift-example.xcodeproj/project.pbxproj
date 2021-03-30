@@ -14,6 +14,33 @@
 		C65945A82612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */; };
 		C65945AB2612F11E00C3887B /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = C65945AA2612F11E00C3887B /* ObjectMapper */; };
 		C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */; };
+		C65945AF2612F20A00C3887B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945AE2612F20A00C3887B /* LoginViewController.swift */; };
+		C65945BB2612F26100C3887B /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B52612F26100C3887B /* SignInPresenter.swift */; };
+		C65945BC2612F26100C3887B /* SignInWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B62612F26100C3887B /* SignInWorker.swift */; };
+		C65945BD2612F26100C3887B /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B72612F26100C3887B /* SignInRouter.swift */; };
+		C65945BE2612F26100C3887B /* SignInModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B82612F26100C3887B /* SignInModels.swift */; };
+		C65945BF2612F26100C3887B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B92612F26100C3887B /* SignInViewController.swift */; };
+		C65945C02612F26100C3887B /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945BA2612F26100C3887B /* SignInInteractor.swift */; };
+		C65945C82612F28200C3887B /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C12612F28100C3887B /* DoubleExt.swift */; };
+		C65945C92612F28200C3887B /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C22612F28100C3887B /* IntExt.swift */; };
+		C65945CA2612F28200C3887B /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C32612F28100C3887B /* StringExt.swift */; };
+		C65945CB2612F28200C3887B /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C42612F28100C3887B /* UITextFieldExt.swift */; };
+		C65945CC2612F28200C3887B /* FloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C52612F28100C3887B /* FloatExt.swift */; };
+		C65945CD2612F28200C3887B /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C62612F28200C3887B /* DateExt.swift */; };
+		C65945CE2612F28200C3887B /* UIAlertActionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945C72612F28200C3887B /* UIAlertActionExt.swift */; };
+		C65945D12612F2CA00C3887B /* TextInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D02612F2CA00C3887B /* TextInputProtocol.swift */; };
+		C65945D92612F4CB00C3887B /* RGMViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D32612F4CB00C3887B /* RGMViewDelegate.swift */; };
+		C65945DA2612F4CB00C3887B /* SearchPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D42612F4CB00C3887B /* SearchPickerViewController.swift */; };
+		C65945DB2612F4CB00C3887B /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D52612F4CB00C3887B /* PickerViewController.swift */; };
+		C65945DC2612F4CB00C3887B /* PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D62612F4CB00C3887B /* PickerViewDelegate.swift */; };
+		C65945DD2612F4CB00C3887B /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945D72612F4CB00C3887B /* DatePickerViewController.swift */; };
+		C65945DE2612F4CB00C3887B /* Pickers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65945D82612F4CB00C3887B /* Pickers.storyboard */; };
+		C65945E12612F4CF00C3887B /* RegisterableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945E02612F4CF00C3887B /* RegisterableCell.swift */; };
+		C65945E42612F4F300C3887B /* ProjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945E32612F4F300C3887B /* ProjectExtensions.swift */; };
+		C65945EA2612F53A00C3887B /* GetPersonEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945E72612F53A00C3887B /* GetPersonEndpoint.swift */; };
+		C65945EB2612F53A00C3887B /* AzureEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945E82612F53A00C3887B /* AzureEndpoint.swift */; };
+		C65945EC2612F53A00C3887B /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945E92612F53A00C3887B /* LoginEndpoint.swift */; };
+		C65945EE2612F56B00C3887B /* APIProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945ED2612F56B00C3887B /* APIProviders.swift */; };
 		C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C60F2611E76A00995C02 /* AppDelegate.swift */; };
 		C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6112611E76A00995C02 /* SceneDelegate.swift */; };
 		C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6132611E76A00995C02 /* ViewController.swift */; };
@@ -44,6 +71,33 @@
 		C65945A52612D7C600C3887B /* UploadEndpointProtocol+Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadEndpointProtocol+Worker.swift"; sourceTree = "<group>"; };
 		C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+ObjectMapper.swift"; sourceTree = "<group>"; };
 		C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		C65945AE2612F20A00C3887B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C65945B52612F26100C3887B /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		C65945B62612F26100C3887B /* SignInWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWorker.swift; sourceTree = "<group>"; };
+		C65945B72612F26100C3887B /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		C65945B82612F26100C3887B /* SignInModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModels.swift; sourceTree = "<group>"; };
+		C65945B92612F26100C3887B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C65945BA2612F26100C3887B /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		C65945C12612F28100C3887B /* DoubleExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
+		C65945C22612F28100C3887B /* IntExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExt.swift; sourceTree = "<group>"; };
+		C65945C32612F28100C3887B /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		C65945C42612F28100C3887B /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		C65945C52612F28100C3887B /* FloatExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatExt.swift; sourceTree = "<group>"; };
+		C65945C62612F28200C3887B /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		C65945C72612F28200C3887B /* UIAlertActionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertActionExt.swift; sourceTree = "<group>"; };
+		C65945D02612F2CA00C3887B /* TextInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputProtocol.swift; sourceTree = "<group>"; };
+		C65945D32612F4CB00C3887B /* RGMViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGMViewDelegate.swift; sourceTree = "<group>"; };
+		C65945D42612F4CB00C3887B /* SearchPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPickerViewController.swift; sourceTree = "<group>"; };
+		C65945D52612F4CB00C3887B /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		C65945D62612F4CB00C3887B /* PickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewDelegate.swift; sourceTree = "<group>"; };
+		C65945D72612F4CB00C3887B /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		C65945D82612F4CB00C3887B /* Pickers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pickers.storyboard; sourceTree = "<group>"; };
+		C65945E02612F4CF00C3887B /* RegisterableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterableCell.swift; sourceTree = "<group>"; };
+		C65945E32612F4F300C3887B /* ProjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectExtensions.swift; sourceTree = "<group>"; };
+		C65945E72612F53A00C3887B /* GetPersonEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonEndpoint.swift; sourceTree = "<group>"; };
+		C65945E82612F53A00C3887B /* AzureEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureEndpoint.swift; sourceTree = "<group>"; };
+		C65945E92612F53A00C3887B /* LoginEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
+		C65945ED2612F56B00C3887B /* APIProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviders.swift; sourceTree = "<group>"; };
 		C6A8C60C2611E76A00995C02 /* diaswift-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diaswift-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A8C60F2611E76A00995C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A8C6112611E76A00995C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +171,86 @@
 			path = "Parameter Protocol";
 			sourceTree = "<group>";
 		};
+		C65945B32612F24A00C3887B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C65945B42612F25100C3887B /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C65945B42612F25100C3887B /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C65945B52612F26100C3887B /* SignInPresenter.swift */,
+				C65945B62612F26100C3887B /* SignInWorker.swift */,
+				C65945B72612F26100C3887B /* SignInRouter.swift */,
+				C65945B82612F26100C3887B /* SignInModels.swift */,
+				C65945B92612F26100C3887B /* SignInViewController.swift */,
+				C65945BA2612F26100C3887B /* SignInInteractor.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C65945CF2612F2B900C3887B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C65945D02612F2CA00C3887B /* TextInputProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C65945D22612F4BB00C3887B /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C65945DF2612F4CF00C3887B /* Registerable Cells */,
+				C65945D72612F4CB00C3887B /* DatePickerViewController.swift */,
+				C65945D82612F4CB00C3887B /* Pickers.storyboard */,
+				C65945D52612F4CB00C3887B /* PickerViewController.swift */,
+				C65945D62612F4CB00C3887B /* PickerViewDelegate.swift */,
+				C65945D32612F4CB00C3887B /* RGMViewDelegate.swift */,
+				C65945D42612F4CB00C3887B /* SearchPickerViewController.swift */,
+			);
+			path = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		C65945DF2612F4CF00C3887B /* Registerable Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C65945E02612F4CF00C3887B /* RegisterableCell.swift */,
+			);
+			path = "Registerable Cells";
+			sourceTree = "<group>";
+		};
+		C65945E22612F4E400C3887B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C6A8C6232611E78B00995C02 /* Sources */,
+				C65945E52612F51500C3887B /* API */,
+				C65945E32612F4F300C3887B /* ProjectExtensions.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C65945E52612F51500C3887B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C65945E62612F51A00C3887B /* Examples */,
+				C65945ED2612F56B00C3887B /* APIProviders.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C65945E62612F51A00C3887B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				C65945E82612F53A00C3887B /* AzureEndpoint.swift */,
+				C65945E72612F53A00C3887B /* GetPersonEndpoint.swift */,
+				C65945E92612F53A00C3887B /* LoginEndpoint.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		C6A8C6032611E76A00995C02 = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +270,8 @@
 		C6A8C60E2611E76A00995C02 /* diaswift-example */ = {
 			isa = PBXGroup;
 			children = (
-				C6A8C6232611E78B00995C02 /* Sources */,
+				C65945E22612F4E400C3887B /* Core */,
+				C65945B32612F24A00C3887B /* Scenes */,
 				C6A8C60F2611E76A00995C02 /* AppDelegate.swift */,
 				C6A8C6112611E76A00995C02 /* SceneDelegate.swift */,
 				C6A8C6132611E76A00995C02 /* ViewController.swift */,
@@ -144,6 +279,7 @@
 				C6A8C6182611E76C00995C02 /* Assets.xcassets */,
 				C6A8C61A2611E76C00995C02 /* LaunchScreen.storyboard */,
 				C6A8C61D2611E76C00995C02 /* Info.plist */,
+				C65945AE2612F20A00C3887B /* LoginViewController.swift */,
 			);
 			path = "diaswift-example";
 			sourceTree = "<group>";
@@ -151,12 +287,12 @@
 		C6A8C6232611E78B00995C02 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C65945D22612F4BB00C3887B /* UI Helpers */,
 				C6A8C6392611FDCD00995C02 /* Extensions */,
 				C6A8C6382611FDC800995C02 /* Helpers */,
 				C6A8C6242611E7B600995C02 /* API Communicator */,
 			);
-			name = Sources;
-			path = ../../Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C6A8C6242611E7B600995C02 /* API Communicator */ = {
@@ -182,6 +318,14 @@
 		C6A8C6392611FDCD00995C02 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C65945CF2612F2B900C3887B /* Protocols */,
+				C65945C62612F28200C3887B /* DateExt.swift */,
+				C65945C12612F28100C3887B /* DoubleExt.swift */,
+				C65945C52612F28100C3887B /* FloatExt.swift */,
+				C65945C22612F28100C3887B /* IntExt.swift */,
+				C65945C32612F28100C3887B /* StringExt.swift */,
+				C65945C72612F28200C3887B /* UIAlertActionExt.swift */,
+				C65945C42612F28100C3887B /* UITextFieldExt.swift */,
 				C6A8C63C2611FE0200995C02 /* DictionaryExt.swift */,
 			);
 			path = Extensions;
@@ -256,6 +400,7 @@
 			files = (
 				C6A8C61C2611E76C00995C02 /* LaunchScreen.storyboard in Resources */,
 				C6A8C6192611E76C00995C02 /* Assets.xcassets in Resources */,
+				C65945DE2612F4CB00C3887B /* Pickers.storyboard in Resources */,
 				C6A8C6172611E76A00995C02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,27 +412,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65945CC2612F28200C3887B /* FloatExt.swift in Sources */,
+				C65945BF2612F26100C3887B /* SignInViewController.swift in Sources */,
+				C65945DD2612F4CB00C3887B /* DatePickerViewController.swift in Sources */,
+				C65945CD2612F28200C3887B /* DateExt.swift in Sources */,
+				C65945BC2612F26100C3887B /* SignInWorker.swift in Sources */,
+				C65945BB2612F26100C3887B /* SignInPresenter.swift in Sources */,
+				C65945C92612F28200C3887B /* IntExt.swift in Sources */,
 				C6A8C63B2611FDE700995C02 /* EndpointProtocol+Defaults.swift in Sources */,
+				C65945C82612F28200C3887B /* DoubleExt.swift in Sources */,
+				C65945EC2612F53A00C3887B /* LoginEndpoint.swift in Sources */,
 				C6A8C63F2611FE4F00995C02 /* ParameterProtocol.swift in Sources */,
 				C6A8C63D2611FE0200995C02 /* DictionaryExt.swift in Sources */,
+				C65945DB2612F4CB00C3887B /* PickerViewController.swift in Sources */,
+				C65945C02612F26100C3887B /* SignInInteractor.swift in Sources */,
+				C65945AF2612F20A00C3887B /* LoginViewController.swift in Sources */,
 				C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */,
 				C6A8C64B261207BC00995C02 /* EndpointProtocol+Interface.swift in Sources */,
+				C65945BE2612F26100C3887B /* SignInModels.swift in Sources */,
+				C65945DA2612F4CB00C3887B /* SearchPickerViewController.swift in Sources */,
 				C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */,
 				C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */,
 				C6A8C6412611FFD400995C02 /* ParameterProtocol+Defaults.swift in Sources */,
+				C65945D12612F2CA00C3887B /* TextInputProtocol.swift in Sources */,
+				C65945CE2612F28200C3887B /* UIAlertActionExt.swift in Sources */,
 				C6A8C645261200E200995C02 /* ParameterProtocol+EndpointProtocol.swift in Sources */,
 				C6A8C647261203E400995C02 /* EndpointProtocol+Worker.swift in Sources */,
+				C65945CA2612F28200C3887B /* StringExt.swift in Sources */,
 				C65945A42612D74500C3887B /* UploadEndpointProtocol+FileRequest.swift in Sources */,
 				C65945A82612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift in Sources */,
+				C65945EA2612F53A00C3887B /* GetPersonEndpoint.swift in Sources */,
+				C65945CB2612F28200C3887B /* UITextFieldExt.swift in Sources */,
 				C65945A02612D65B00C3887B /* UploadEndpointProtocol.swift in Sources */,
 				C65945A62612D7C600C3887B /* UploadEndpointProtocol+Worker.swift in Sources */,
 				C6A8C62D2611E8A700995C02 /* APIProvider.swift in Sources */,
+				C65945BD2612F26100C3887B /* SignInRouter.swift in Sources */,
+				C65945EB2612F53A00C3887B /* AzureEndpoint.swift in Sources */,
 				C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */,
+				C65945EE2612F56B00C3887B /* APIProviders.swift in Sources */,
 				C6A8C6372611FD9400995C02 /* EndpointProtocol+Getters.swift in Sources */,
 				C65945A22612D70800C3887B /* UploadEndpointProtocol+Interface.swift in Sources */,
 				C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */,
+				C65945E42612F4F300C3887B /* ProjectExtensions.swift in Sources */,
+				C65945DC2612F4CB00C3887B /* PickerViewDelegate.swift in Sources */,
 				C6A8C6432611FFEA00995C02 /* ParameterProtocol+Getters.swift in Sources */,
 				C6A8C6492612042A00995C02 /* Helpers.swift in Sources */,
+				C65945E12612F4CF00C3887B /* RegisterableCell.swift in Sources */,
+				C65945D92612F4CB00C3887B /* RGMViewDelegate.swift in Sources */,
 				C6A8C6282611E84700995C02 /* RouteProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
