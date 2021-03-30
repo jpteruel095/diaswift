@@ -51,7 +51,7 @@ extension ParameterProtocol{
         return parameters
     }
     
-    /// Assesses the property value to avoid complications
+    /// Assesses the property value to avoid bugs
     private func getValue(unknownValue: Any) -> Any? {
 
         let value = Mirror(reflecting: unknownValue)
