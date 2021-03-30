@@ -20,12 +20,17 @@ enum SignIn
   {
     struct Request
     {
+        var username: String
+        var password: String
     }
+    
     struct Response
     {
+        var error: Error?
     }
     struct ViewModel
     {
+        var error: Error?
     }
   }
 }

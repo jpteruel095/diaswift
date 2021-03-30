@@ -14,7 +14,6 @@
 		C65945A82612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */; };
 		C65945AB2612F11E00C3887B /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = C65945AA2612F11E00C3887B /* ObjectMapper */; };
 		C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */; };
-		C65945AF2612F20A00C3887B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945AE2612F20A00C3887B /* LoginViewController.swift */; };
 		C65945BB2612F26100C3887B /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B52612F26100C3887B /* SignInPresenter.swift */; };
 		C65945BC2612F26100C3887B /* SignInWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B62612F26100C3887B /* SignInWorker.swift */; };
 		C65945BD2612F26100C3887B /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945B72612F26100C3887B /* SignInRouter.swift */; };
@@ -43,7 +42,6 @@
 		C65945EE2612F56B00C3887B /* APIProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65945ED2612F56B00C3887B /* APIProviders.swift */; };
 		C6A8C6102611E76A00995C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C60F2611E76A00995C02 /* AppDelegate.swift */; };
 		C6A8C6122611E76A00995C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6112611E76A00995C02 /* SceneDelegate.swift */; };
-		C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A8C6132611E76A00995C02 /* ViewController.swift */; };
 		C6A8C6172611E76A00995C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A8C6152611E76A00995C02 /* Main.storyboard */; };
 		C6A8C6192611E76C00995C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A8C6182611E76C00995C02 /* Assets.xcassets */; };
 		C6A8C61C2611E76C00995C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A8C61A2611E76C00995C02 /* LaunchScreen.storyboard */; };
@@ -71,7 +69,6 @@
 		C65945A52612D7C600C3887B /* UploadEndpointProtocol+Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UploadEndpointProtocol+Worker.swift"; sourceTree = "<group>"; };
 		C65945A72612F0D500C3887B /* EndpointProtocol+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+ObjectMapper.swift"; sourceTree = "<group>"; };
 		C65945AC2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndpointProtocol+SwiftyJSON.swift"; sourceTree = "<group>"; };
-		C65945AE2612F20A00C3887B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C65945B52612F26100C3887B /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		C65945B62612F26100C3887B /* SignInWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWorker.swift; sourceTree = "<group>"; };
 		C65945B72612F26100C3887B /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
@@ -101,7 +98,6 @@
 		C6A8C60C2611E76A00995C02 /* diaswift-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diaswift-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A8C60F2611E76A00995C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A8C6112611E76A00995C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6A8C6132611E76A00995C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6A8C6162611E76A00995C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6A8C6182611E76C00995C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6A8C61B2611E76C00995C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -274,12 +270,10 @@
 				C65945B32612F24A00C3887B /* Scenes */,
 				C6A8C60F2611E76A00995C02 /* AppDelegate.swift */,
 				C6A8C6112611E76A00995C02 /* SceneDelegate.swift */,
-				C6A8C6132611E76A00995C02 /* ViewController.swift */,
 				C6A8C6152611E76A00995C02 /* Main.storyboard */,
 				C6A8C6182611E76C00995C02 /* Assets.xcassets */,
 				C6A8C61A2611E76C00995C02 /* LaunchScreen.storyboard */,
 				C6A8C61D2611E76C00995C02 /* Info.plist */,
-				C65945AE2612F20A00C3887B /* LoginViewController.swift */,
 			);
 			path = "diaswift-example";
 			sourceTree = "<group>";
@@ -426,12 +420,10 @@
 				C6A8C63D2611FE0200995C02 /* DictionaryExt.swift in Sources */,
 				C65945DB2612F4CB00C3887B /* PickerViewController.swift in Sources */,
 				C65945C02612F26100C3887B /* SignInInteractor.swift in Sources */,
-				C65945AF2612F20A00C3887B /* LoginViewController.swift in Sources */,
 				C6A8C6352611F0A500995C02 /* EndpointProtocol.swift in Sources */,
 				C6A8C64B261207BC00995C02 /* EndpointProtocol+Interface.swift in Sources */,
 				C65945BE2612F26100C3887B /* SignInModels.swift in Sources */,
 				C65945DA2612F4CB00C3887B /* SearchPickerViewController.swift in Sources */,
-				C6A8C6142611E76A00995C02 /* ViewController.swift in Sources */,
 				C65945AD2612F15B00C3887B /* EndpointProtocol+SwiftyJSON.swift in Sources */,
 				C6A8C6412611FFD400995C02 /* ParameterProtocol+Defaults.swift in Sources */,
 				C65945D12612F2CA00C3887B /* TextInputProtocol.swift in Sources */,

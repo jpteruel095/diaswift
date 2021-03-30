@@ -32,10 +32,37 @@ class SignInInteractor: SignInBusinessLogic, SignInDataStore
   
   func doSomething(request: SignIn.Something.Request)
   {
-    worker = SignInWorker()
-    worker?.doSomeWork()
+    let username = request.username
+    let password = request.password
+    // you can assign on a variable for a "cleaner" code
+    let endpoint = LoginEndpoint(username: username, password: password)
     
-    let response = SignIn.Something.Response()
-    presenter?.presentSomething(response: response)
+    /**
+     You can also use it without assigning on a variable, e.g.
+     LoginEndpoint(username: username, password: password).requestSingle { /// Code goes here /// }
+     */
+    endpoint.requestSingle { [self] (result) in
+        switch result {
+        case .success(let json):
+            // check if the JSON is null or not
+            // and check if token exists
+            guard let token = json["token"].string else{
+                let error = Helpers.makeError(with: "Request did not return any data.")
+                let response = SignIn.Something.Response(error: error)
+                presenter?.presentSomething(response: response)
+                return
+            }
+            
+            // store the token somewhere
+            UserDefaults.standard.setValue(token, forKey: "accessToken")
+            UserDefaults.standard.synchronize()
+            
+            let response = SignIn.Something.Response()
+            presenter?.presentSomething(response: response)
+        case .failure(let error):
+            let response = SignIn.Something.Response(error: error)
+            presenter?.presentSomething(response: response)
+        }
+    }
   }
 }

@@ -25,7 +25,7 @@ class SignInPresenter: SignInPresentationLogic
   
   func presentSomething(response: SignIn.Something.Response)
   {
-    let viewModel = SignIn.Something.ViewModel()
+    let viewModel = SignIn.Something.ViewModel(error: response.error)
     viewController?.displaySomething(viewModel: viewModel)
   }
 }

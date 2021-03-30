@@ -21,7 +21,7 @@ class SignInViewController: UIViewController, SignInDisplayLogic
 {
   var interactor: SignInBusinessLogic?
   var router: (NSObjectProtocol & SignInRoutingLogic & SignInDataPassing)?
-
+    
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -69,21 +69,39 @@ class SignInViewController: UIViewController, SignInDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    
   }
   
   // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
+    
+  // MARK: IBOutlets
+  @IBOutlet weak var usernameField: UITextField!
+  @IBOutlet weak var passwordField: UILabel!
+    
+    @IBAction func didTapLogin(_ sender: Any) {
+        doSomething()
+    }
   
   func doSomething()
   {
-    let request = SignIn.Something.Request()
+    guard let username = usernameField.text?.nullableTrimmed,
+          let password = passwordField.text?.nullableTrimmed else{
+        self.showInvalidInputMessageAlert(message: "Username or Password is not valid.")
+        return
+    }
+    
+    let request = SignIn.Something.Request(username: username, password: password)
     interactor?.doSomething(request: request)
   }
   
   func displaySomething(viewModel: SignIn.Something.ViewModel)
   {
     //nameTextField.text = viewModel.name
+    if let error = viewModel.error{
+        self.showErrorMessageAlert(error: error)
+    }else{
+        self.showMessageAlert(title: "Success", message: "Successfully logged in.")
+    }
   }
+    
 }
